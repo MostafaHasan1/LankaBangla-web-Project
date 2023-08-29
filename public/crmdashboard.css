@@ -1,0 +1,14 @@
+body{
+    margin:0;
+}
+.header {
+  margin: 0; 
+  padding: 80px;
+  background-color:tomato;
+}
+
+.menu{
+    width: 10rem;
+    background-color: aqua;
+    padding: 4px;
+}
