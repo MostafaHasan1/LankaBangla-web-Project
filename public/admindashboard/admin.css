@@ -1,0 +1,141 @@
+body {
+    color: #000;
+    font-weight: 700;
+    font-size: 20px;
+    background-color: #2a9d8f;
+    margin: 0;
+  }
+  
+  #header {
+      margin: 0;
+      padding: 60px;
+      background-color: #14213d;
+      text-align: center;
+      font-size: 25px;
+      color: #fca311;
+      background-image: url(../img/logo.png);
+      background-repeat: no-repeat;
+      background-size: 200px;
+      background-attachment:local;
+      background-position-x: 30px;
+      background-position-y: 30px ;
+    }
+  
+  form {
+    margin-left: 400px;
+    padding: 3rem;
+  }
+  
+  label {
+    display: inline-block;
+    width: 150px;
+    text-align: left;
+  }
+  
+  div {
+    margin-bottom: 10px;
+  }
+  
+  .form-control {
+    width: 300px;
+    padding: 20px;
+    border: 1px solid #cccccc00;
+    background-color: #ddd7c87c;
+    font-size: 20px;
+    border-radius: 1rem;
+  }
+  
+  #poatitle {
+    width: 341px;
+  }
+  
+  input[type="radio"] {
+    transform: scale(2);
+  }
+  
+  #l_male,
+  #l_female {
+    margin-left: 10px;
+  }
+  
+  #submit{
+    margin-top: 2rem;
+    padding: 10px 30px;
+    font-size: 25px;
+    border-radius: 1rem;
+    background-color: #f4a261;
+  }
+  
+  #submit:hover{
+    background-color: #264653;
+    color: #fb8500;
+  }
+  /* Navbar container */
+.navbar {
+    overflow: hidden;
+    background-color: #333;
+    font-family: Arial;
+  }
+  
+  /* Links inside the navbar */
+  .navbar a {
+    float: left;
+    font-size: 16px;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  /* The dropdown container */
+  .dropdown {
+    float: left;
+    overflow: hidden;
+  }
+  
+  /* Dropdown button */
+  .dropdown .dropbtn {
+    font-size: 16px;
+    border: none;
+    outline: none;
+    color: white;
+    padding: 14px 16px;
+    background-color: inherit;
+    font-family: inherit; /* Important for vertical align on mobile phones */
+    margin: 0; /* Important for vertical align on mobile phones */
+  }
+  
+  /* Add a red background color to navbar links on hover */
+  .navbar a:hover, .dropdown:hover .dropbtn {
+    background-color: red;
+  }
+  
+  /* Dropdown content (hidden by default) */
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  /* Links inside the dropdown */
+  .dropdown-content a {
+    float: none;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+  }
+  
+  /* Add a grey background color to dropdown links on hover */
+  .dropdown-content a:hover {
+    background-color: #ddd;
+  }
+  
+  /* Show the dropdown menu on hover */
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }

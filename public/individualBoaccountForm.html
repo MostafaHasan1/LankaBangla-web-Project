@@ -81,6 +81,7 @@
                 class="u-clearfix u-form-spacing-20 u-form-vertical u-inner-form"
                 source="email"
                 name="form"
+                id="indiBoform"
                 style="padding: 0px"
               >
                 <p class="u-form-group u-form-text u-text u-text-2">
@@ -96,7 +97,7 @@
                   <input
                     type="text"
                     id="text-7edf"
-                    name="text"
+                    name="c_name"
                     class="u-border-none u-input u-input-rectangle u-palette-5-base u-radius-37 u-input-1"
                     placeholder="Enter your name"
                   />
@@ -109,10 +110,11 @@
                     class="u-form-control-hidden u-label"
                   ></label>
                   <input
+                  required
                     type="text"
                     placeholder="Father name"
                     id="text-567b"
-                    name="text-2"
+                    name="c_father_name"
                     class="u-border-none u-input u-input-rectangle u-palette-5-base u-radius-37 u-input-3"
                   />
                 </div>
@@ -127,7 +129,7 @@
                     type="text"
                     placeholder="Mother name"
                     id="text-0add"
-                    name="text-3"
+                    name="c_mother_name"
                     class="u-border-none u-input u-input-rectangle u-palette-5-base u-radius-37 u-input-4"
                   />
                 </div>
@@ -139,7 +141,7 @@
                   <div class="u-form-select-wrapper">
                     <select
                       id="select-2544"
-                      name="Account Type?"
+                      name="c_account_type?"
                       class="u-border-none u-input u-input-rectangle u-palette-5-base u-radius-37 u-input-5"
                       required="required"
                     >
@@ -166,7 +168,7 @@
                     </svg>
                   </div>
                 </div>
-                <div
+                <!-- <div
                   class="u-form-date u-form-group u-label-top u-form-group-7"
                 >
                   <label
@@ -183,7 +185,7 @@
                     required=""
                     data-date-format="yyyy/mm/dd"
                   />
-                </div>
+                </div> -->
                 <div
                   class="u-form-group u-form-input-layout-horizontal u-form-radiobutton u-label-top u-form-group-8"
                 >
@@ -193,10 +195,9 @@
                       <input
                         id="field-48ab"
                         type="radio"
-                        name="radiobutton"
+                        name="c_sex"
                         value="Male"
                         class="u-border-2 u-border-grey-75 u-field-input u-radius-15"
-                        checked="checked"
                         required="required"
                         data-calc=""
                       />
@@ -206,7 +207,7 @@
                       <input
                         id="field-6d22"
                         type="radio"
-                        name="radiobutton"
+                        name="c_sex"
                         value="Female"
                         class="u-border-2 u-border-grey-75 u-field-input u-radius-15"
                         required="required"
@@ -220,7 +221,7 @@
                       <input
                         id="field-95b3"
                         type="radio"
-                        name="radiobutton"
+                        name="c_sex"
                         value="Other"
                         class="u-border-2 u-border-grey-75 u-field-input u-radius-15"
                         data-calc=""
@@ -246,7 +247,7 @@
                     type="text"
                     placeholder="Present address"
                     id="name-e521"
-                    name="street"
+                    name="c_pre_add"
                     class="u-border-none u-input u-input-rectangle u-palette-5-base u-radius-37 u-input-7"
                   />
                 </div>
@@ -261,7 +262,7 @@
                     type="text"
                     placeholder="Present city"
                     id="name-e521"
-                    name="city"
+                    name="c_pre_city"
                     class="u-border-none u-input u-input-rectangle u-palette-5-base u-radius-37 u-input-8"
                   />
                 </div>
@@ -276,7 +277,7 @@
                     type="text"
                     placeholder="Present postal code"
                     id="name-e521"
-                    name="city"
+                    name="c_pre_post_code"
                     class="u-border-none u-input u-input-rectangle u-palette-5-base u-radius-37 u-input-9"
                   />
                 </div>
@@ -289,7 +290,7 @@
                     type="text"
                     placeholder="Present country"
                     id="text-c511"
-                    name="text-4"
+                    name="c_pre_country"
                     class="u-border-none u-input u-input-rectangle u-palette-5-base u-radius-37 u-input-10"
                   />
                 </div>
@@ -302,7 +303,7 @@
                     type="text"
                     placeholder="Present telephone number (e.g. 01054 694200)"
                     id="text-bc2a"
-                    name="text-9"
+                    name="c_pre_tel"
                     class="u-border-none u-input u-input-rectangle u-palette-5-base u-radius-37 u-input-11"
                   />
                 </div>
@@ -321,7 +322,7 @@
                     type="text"
                     placeholder="Permanent address"
                     id="text-cd11"
-                    name="text-5"
+                    name="c_per_add"
                     class="u-border-none u-input u-input-rectangle u-palette-5-base u-radius-37 u-input-12"
                   />
                 </div>
@@ -336,7 +337,7 @@
                     type="text"
                     placeholder="Permanent city"
                     id="text-ed4c"
-                    name="text-6"
+                    name="c_per_city"
                     class="u-border-none u-input u-input-rectangle u-palette-5-base u-radius-37 u-input-13"
                   />
                 </div>
@@ -351,7 +352,7 @@
                     type="text"
                     placeholder="Permanent postal code"
                     id="text-c57a"
-                    name="text-7"
+                    name="c_per_post_code"
                     class="u-border-none u-input u-input-rectangle u-palette-5-base u-radius-37 u-input-14"
                   />
                 </div>
@@ -364,7 +365,7 @@
                     type="text"
                     placeholder="Permanent country"
                     id="text-5edb"
-                    name="text-8"
+                    name="c_per_country"
                     class="u-border-none u-input u-input-rectangle u-palette-5-base u-radius-37 u-input-15"
                   />
                 </div>
@@ -377,7 +378,7 @@
                     type="text"
                     placeholder="Permanent telephone number (e.g. 01054 694200)"
                     id="text-f342"
-                    name="text-10"
+                    name="c_per_tel"
                     class="u-border-none u-input u-input-rectangle u-palette-5-base u-radius-37 u-input-16"
                   />
                 </div>
@@ -390,10 +391,9 @@
                       <input
                         id="field-bb78"
                         type="radio"
-                        name="radiobutton-1"
+                        name="c_type"
                         value="Regular"
                         class="u-border-2 u-border-grey-75 u-field-input u-radius-15"
-                        checked="checked"
                         data-calc=""
                       />
                       <label class="u-field-label" for="field-bb78"
@@ -404,7 +404,7 @@
                       <input
                         id="field-6b58"
                         type="radio"
-                        name="radiobutton-1"
+                        name="c_type"
                         value="Clearing"
                         class="u-border-2 u-border-grey-75 u-field-input u-radius-15"
                         data-calc=""
@@ -422,7 +422,7 @@
                   <div class="u-form-select-wrapper">
                     <select
                       id="select-98b3"
-                      name="select"
+                      name="c_division"
                       class="u-border-none u-input u-input-rectangle u-palette-5-base u-radius-37 u-input-17"
                     >
                       <option value="Dhaka" data-calc="">Dhaka</option>
@@ -467,7 +467,7 @@
                     type="text"
                     placeholder="Mobile number"
                     id="text-a1b0"
-                    name="text-11"
+                    name="c_mobile_num"
                     class="u-border-none u-input u-input-rectangle u-palette-5-base u-radius-37 u-input-18"
                   />
                 </div>
@@ -482,7 +482,7 @@
                     type="text"
                     placeholder="Email (e.g. abc@gmail.com)"
                     id="text-da8f"
-                    name="text-12"
+                    name="c_mobile_num"
                     class="u-border-none u-input u-input-rectangle u-palette-5-base u-radius-37 u-input-19"
                   />
                 </div>
@@ -497,7 +497,7 @@
                     type="text"
                     placeholder="Occupation"
                     id="text-2858"
-                    name="text-13"
+                    name="c_occupation"
                     class="u-border-none u-input u-input-rectangle u-palette-5-base u-radius-37 u-input-20"
                   />
                 </div>
@@ -509,10 +509,11 @@
                     class="u-form-control-hidden u-label u-label-23"
                   ></label>
                   <input
-                    type="text"
+                    required
+                    type="number"
                     placeholder="E-tin"
                     id="text-ca6d"
-                    name="text-14"
+                    name="c_etin"
                     class="u-border-none u-input u-input-rectangle u-palette-5-base u-radius-37 u-input-21"
                   />
                 </div>
@@ -527,7 +528,7 @@
                     type="text"
                     placeholder="Nationality"
                     id="text-dcf4"
-                    name="text-15"
+                    name="c_nationality"
                     class="u-border-none u-input u-input-rectangle u-palette-5-base u-radius-37 u-input-22"
                   />
                 </div>
@@ -542,7 +543,7 @@
                     type="text"
                     placeholder="Passport number"
                     id="text-15dc"
-                    name="text-19"
+                    name="c_passport_num"
                     class="u-border-none u-input u-input-rectangle u-palette-5-base u-radius-37 u-input-23"
                   />
                 </div>
@@ -553,7 +554,7 @@
                   <div class="u-form-select-wrapper">
                     <select
                       id="select-af63"
-                      name="select-1"
+                      name="c_branch"
                       class="u-border-none u-input u-input-rectangle u-palette-5-base u-radius-37 u-input-24"
                     >
                       <option value="Banani" data-calc="">Banani</option>
@@ -607,7 +608,7 @@
                     type="text"
                     placeholder="Bank routing number"
                     id="text-780b"
-                    name="text-16"
+                    name="c_bank_routing_num"
                     class="u-border-none u-input u-input-rectangle u-palette-5-base u-radius-37 u-input-25"
                   />
                 </div>
@@ -622,7 +623,7 @@
                     type="text"
                     placeholder="Bank branch name"
                     id="text-aa81"
-                    name="text-18"
+                    name="c_bank_branch_name"
                     class="u-border-none u-input u-input-rectangle u-palette-5-base u-radius-37 u-input-26"
                   />
                 </div>
@@ -635,7 +636,7 @@
                     type="text"
                     placeholder="Bank account number"
                     id="text-37b7"
-                    name="text-17"
+                    name="c_bank_account_num"
                     class="u-border-none u-input u-input-rectangle u-palette-5-base u-radius-37 u-input-27"
                   />
                 </div>
@@ -654,10 +655,10 @@
                       <input
                         id="field-bbc2"
                         type="checkbox"
-                        name="checkbox[]"
-                        value="Internet trading"
+                        name="internet_trading"
+                        value="y"
                         class="u-field-input"
-                        checked="checked"
+                      
                         data-calc=""
                       />
                       <label class="u-field-label" for="field-bbc2"
@@ -668,8 +669,8 @@
                       <input
                         id="field-66bc"
                         type="checkbox"
-                        name="checkbox[]"
-                        value="DSE"
+                        name="dse"
+                        value="y"
                         class="u-field-input"
                         data-calc=""
                       />
@@ -679,8 +680,8 @@
                       <input
                         id="field-b37e"
                         type="checkbox"
-                        name="checkbox[]"
-                        value="CSE"
+                        name="cse"
+                        value="y"
                         class="u-field-input"
                         data-calc=""
                       />
@@ -690,8 +691,8 @@
                       <input
                         id="field-9769"
                         type="checkbox"
-                        name="checkbox[]"
-                        value="Order Management System"
+                        name="oms"
+                        value="y"
                         class="u-field-input"
                         data-calc=""
                       />
@@ -703,8 +704,8 @@
                       <input
                         id="field-6466"
                         type="checkbox"
-                        name="checkbox[]"
-                        value="SMS"
+                        name="sms_service"
+                        value="y"
                         class="u-field-input"
                         data-calc=""
                       />
@@ -714,8 +715,8 @@
                       <input
                         id="field-8de1"
                         type="checkbox"
-                        name="checkbox[]"
-                        value="Email"
+                        name="email_service"
+                        value="y"
                         class="u-field-input"
                         data-calc=""
                       />
@@ -729,507 +730,11 @@
                   class="u-border-3 u-border-grey-dark-1 u-form-group u-form-line u-line u-line-horizontal u-line-5"
                 ></div>
                 <p class="u-form-group u-form-text u-text u-text-7">
-                  Nominee details :
-                </p>
-                <div
-                  class="u-form-group u-form-name u-form-partition-factor-2 u-label-top u-form-group-42"
-                >
-                  <label
-                    for="name-bc41"
-                    class="u-form-control-hidden u-label"
-                  ></label>
-                  <input
-                    type="text"
-                    placeholder="Nominee Name"
-                    id="name-bc41"
-                    name="name"
-                    class="u-border-none u-input u-input-rectangle u-palette-5-base u-radius-37 u-input-28"
-                    required=""
-                  />
-                </div>
-                <div
-                  class="u-form-date u-form-group u-form-partition-factor-2 u-label-top u-form-group-43"
-                >
-                  <label
-                    for="date-81f8"
-                    class="u-form-control-hidden u-label"
-                  ></label>
-                  <input
-                    type="text"
-                    readonly="readonly"
-                    placeholder="YYYY/MM/DD"
-                    id="date-81f8"
-                    name="date-1"
-                    class="u-border-none u-input u-input-rectangle u-palette-5-base u-radius-37 u-input-29"
-                    required=""
-                    data-date-format="yyyy/mm/dd"
-                  />
-                </div>
-                <div
-                  class="u-form-group u-form-input-layout-horizontal u-form-radiobutton u-label-top u-form-group-44"
-                >
-                  <label class="u-label">Gender</label>
-                  <div class="u-form-radio-button-wrapper">
-                    <div class="u-input-row">
-                      <input
-                        id="field-e4f4"
-                        type="radio"
-                        name="radiobutton-2"
-                        value="Male"
-                        class="u-border-2 u-border-grey-75 u-field-input u-radius-15"
-                        checked="checked"
-                        data-calc=""
-                      />
-                      <label class="u-field-label" for="field-e4f4">Male</label>
-                    </div>
-                    <div class="u-input-row">
-                      <input
-                        id="field-6b5a"
-                        type="radio"
-                        name="radiobutton-2"
-                        value="Female"
-                        class="u-border-2 u-border-grey-75 u-field-input u-radius-15"
-                        data-calc=""
-                      />
-                      <label class="u-field-label" for="field-6b5a"
-                        >Female</label
-                      >
-                    </div>
-                    <div class="u-input-row">
-                      <input
-                        id="field-986e"
-                        type="radio"
-                        name="radiobutton-2"
-                        value="Other"
-                        class="u-border-2 u-border-grey-75 u-field-input u-radius-15"
-                        data-calc=""
-                      />
-                      <label class="u-field-label" for="field-986e"
-                        >Other</label
-                      >
-                    </div>
-                  </div>
-                </div>
-                <div class="u-form-group u-label-top u-form-group-45">
-                  <label
-                    for="text-1a21"
-                    class="u-form-control-hidden u-label"
-                  ></label>
-                  <input
-                    type="text"
-                    placeholder="Address"
-                    id="text-1a21"
-                    name="text-20"
-                    class="u-border-none u-input u-input-rectangle u-palette-5-base u-radius-37 u-input-30"
-                  />
-                </div>
-                <div
-                  class="u-form-group u-form-partition-factor-3 u-label-top u-form-group-46"
-                >
-                  <label
-                    for="text-5edd"
-                    class="u-form-control-hidden u-label"
-                  ></label>
-                  <input
-                    type="text"
-                    placeholder="City"
-                    id="text-5edd"
-                    name="text-21"
-                    class="u-border-none u-input u-input-rectangle u-palette-5-base u-radius-37 u-input-31"
-                  />
-                </div>
-                <div
-                  class="u-form-group u-form-partition-factor-3 u-label-top u-form-group-47"
-                >
-                  <label
-                    for="text-05c7"
-                    class="u-form-control-hidden u-label"
-                  ></label>
-                  <input
-                    type="text"
-                    placeholder="Postal code"
-                    id="text-05c7"
-                    name="text-22"
-                    class="u-border-none u-input u-input-rectangle u-palette-5-base u-radius-37 u-input-32"
-                  />
-                </div>
-                <div
-                  class="u-form-group u-form-partition-factor-3 u-label-top u-form-group-48"
-                >
-                  <label
-                    for="text-b265"
-                    class="u-form-control-hidden u-label"
-                  ></label>
-                  <input
-                    type="text"
-                    placeholder="State"
-                    id="text-b265"
-                    name="text-23"
-                    class="u-border-none u-input u-input-rectangle u-palette-5-base u-radius-37 u-input-33"
-                  />
-                </div>
-                <div
-                  class="u-form-group u-form-partition-factor-2 u-label-top u-form-group-49"
-                >
-                  <label
-                    for="text-3893"
-                    class="u-form-control-hidden u-label"
-                  ></label>
-                  <input
-                    type="text"
-                    placeholder="Country"
-                    id="text-3893"
-                    name="text-24"
-                    class="u-border-none u-input u-input-rectangle u-palette-5-base u-radius-37 u-input-34"
-                  />
-                </div>
-                <div
-                  class="u-form-group u-form-partition-factor-2 u-label-top u-form-group-50"
-                >
-                  <label
-                    for="text-ce3f"
-                    class="u-form-control-hidden u-label"
-                  ></label>
-                  <input
-                    type="text"
-                    placeholder="Email (e.g. abc@gmail.com)"
-                    id="text-ce3f"
-                    name="text-25"
-                    class="u-border-none u-input u-input-rectangle u-palette-5-base u-radius-37 u-input-35"
-                  />
-                </div>
-                <div
-                  class="u-form-group u-form-partition-factor-2 u-label-top u-form-group-51"
-                >
-                  <label
-                    for="text-1f32"
-                    class="u-form-control-hidden u-label"
-                  ></label>
-                  <input
-                    type="text"
-                    placeholder="Telephone number"
-                    id="text-1f32"
-                    name="text-26"
-                    class="u-border-none u-input u-input-rectangle u-palette-5-base u-radius-37 u-input-36"
-                  />
-                </div>
-                <div
-                  class="u-form-group u-form-partition-factor-2 u-label-top u-form-group-52"
-                >
-                  <label
-                    for="text-f100"
-                    class="u-form-control-hidden u-label"
-                  ></label>
-                  <input
-                    type="text"
-                    placeholder="Mobile number"
-                    id="text-f100"
-                    name="text-27"
-                    class="u-border-none u-input u-input-rectangle u-palette-5-base u-radius-37 u-input-37"
-                  />
-                </div>
-                <div
-                  class="u-form-group u-form-partition-factor-2 u-label-top u-form-group-53"
-                >
-                  <label
-                    for="text-946f"
-                    class="u-form-control-hidden u-label"
-                  ></label>
-                  <input
-                    type="text"
-                    placeholder="Percentage"
-                    id="text-946f"
-                    name="text-28"
-                    class="u-border-none u-input u-input-rectangle u-palette-5-base u-radius-37 u-input-38"
-                  />
-                </div>
-                <div
-                  class="u-form-group u-form-partition-factor-2 u-label-top u-form-group-54"
-                >
-                  <label
-                    for="text-c120"
-                    class="u-form-control-hidden u-label"
-                  ></label>
-                  <input
-                    type="text"
-                    placeholder="Relation with customer"
-                    id="text-c120"
-                    name="text-29"
-                    class="u-border-none u-input u-input-rectangle u-palette-5-base u-radius-37 u-input-39"
-                  />
-                </div>
-                <div class="u-form-group u-label-top u-form-group-55">
-                  <label
-                    for="text-fc6e"
-                    class="u-form-control-hidden u-label"
-                  ></label>
-                  <input
-                    type="text"
-                    placeholder="Passport number"
-                    id="text-fc6e"
-                    name="text-30"
-                    class="u-border-none u-input u-input-rectangle u-palette-5-base u-radius-37 u-input-40"
-                  />
-                </div>
-                <div class="u-form-group u-label-top u-form-group-56">
-                  <label
-                    for="text-3b4e"
-                    class="u-form-control-hidden u-label"
-                  ></label>
-                  <input
-                    type="text"
-                    placeholder="Issue place"
-                    id="text-3b4e"
-                    name="text-31"
-                    class="u-border-none u-input u-input-rectangle u-palette-5-base u-radius-37 u-input-41"
-                  />
-                </div>
-                <div
-                  class="u-form-date u-form-group u-form-partition-factor-2 u-label-top u-form-group-57"
-                >
-                  <label
-                    for="date-9fd7"
-                    class="u-form-control-hidden u-label"
-                  ></label>
-                  <input
-                    type="text"
-                    readonly="readonly"
-                    placeholder="YYYY/MM/DD"
-                    id="date-9fd7"
-                    name="date-2"
-                    class="u-border-none u-input u-input-rectangle u-palette-5-base u-radius-37 u-input-42"
-                    required=""
-                    data-date-format="yyyy/mm/dd"
-                  />
-                </div>
-                <div
-                  class="u-form-date u-form-group u-form-partition-factor-2 u-label-top u-form-group-58"
-                >
-                  <label
-                    for="date-b61a"
-                    class="u-form-control-hidden u-label"
-                  ></label>
-                  <input
-                    type="text"
-                    readonly="readonly"
-                    placeholder="YYYY/MM/DD"
-                    id="date-b61a"
-                    name="date-3"
-                    class="u-border-none u-input u-input-rectangle u-palette-5-base u-radius-37 u-input-43"
-                    required=""
-                    data-date-format="yyyy/mm/dd"
-                  />
-                </div>
-                <p class="u-form-group u-form-text u-text u-text-8">
-                  Minor nominee :
-                </p>
-                <div class="u-form-group u-label-top u-form-group-60">
-                  <label
-                    for="text-2de2"
-                    class="u-form-control-hidden u-label"
-                  ></label>
-                  <input
-                    type="text"
-                    placeholder="Guardian name"
-                    id="text-2de2"
-                    name="text-32"
-                    class="u-border-none u-input u-input-rectangle u-palette-5-base u-radius-37 u-input-44"
-                  />
-                </div>
-                <div
-                  class="u-form-group u-form-partition-factor-3 u-label-top u-form-group-61"
-                >
-                  <label
-                    for="text-34d0"
-                    class="u-form-control-hidden u-label"
-                  ></label>
-                  <input
-                    type="text"
-                    placeholder="Guardian city"
-                    id="text-34d0"
-                    name="text-33"
-                    class="u-border-none u-input u-input-rectangle u-palette-5-base u-radius-37 u-input-45"
-                  />
-                </div>
-                <div
-                  class="u-form-group u-form-partition-factor-3 u-label-top u-form-group-62"
-                >
-                  <label
-                    for="text-31d4"
-                    class="u-form-control-hidden u-label"
-                  ></label>
-                  <input
-                    type="text"
-                    placeholder="Guardian postal code"
-                    id="text-31d4"
-                    name="text-34"
-                    class="u-border-none u-input u-input-rectangle u-palette-5-base u-radius-37 u-input-46"
-                  />
-                </div>
-                <div
-                  class="u-form-group u-form-partition-factor-3 u-label-top u-form-group-63"
-                >
-                  <label
-                    for="text-e6ef"
-                    class="u-form-control-hidden u-label"
-                  ></label>
-                  <input
-                    type="text"
-                    placeholder="Guardian division"
-                    id="text-e6ef"
-                    name="text-35"
-                    class="u-border-none u-input u-input-rectangle u-palette-5-base u-radius-37 u-input-47"
-                  />
-                </div>
-                <div
-                  class="u-form-group u-form-partition-factor-3 u-label-top u-form-group-64"
-                >
-                  <label
-                    for="text-24fd"
-                    class="u-form-control-hidden u-label"
-                  ></label>
-                  <input
-                    type="text"
-                    placeholder="Gurdian Mobile number"
-                    id="text-24fd"
-                    name="text-37"
-                    class="u-border-none u-input u-input-rectangle u-palette-5-base u-radius-37 u-input-48"
-                  />
-                </div>
-                <div
-                  class="u-form-group u-form-partition-factor-3 u-label-top u-form-group-65"
-                >
-                  <label
-                    for="text-c329"
-                    class="u-form-control-hidden u-label"
-                  ></label>
-                  <input
-                    type="text"
-                    placeholder="Guardian email"
-                    id="text-c329"
-                    name="text-38"
-                    class="u-border-none u-input u-input-rectangle u-palette-5-base u-radius-37 u-input-49"
-                  />
-                </div>
-                <div
-                  class="u-form-group u-form-partition-factor-3 u-label-top u-form-group-66"
-                >
-                  <label
-                    for="text-ede2"
-                    class="u-form-control-hidden u-label"
-                  ></label>
-                  <input
-                    type="text"
-                    placeholder="Guardian country"
-                    id="text-ede2"
-                    name="text-36"
-                    class="u-border-none u-input u-input-rectangle u-palette-5-base u-radius-37 u-input-50"
-                  />
-                </div>
-                <div
-                  class="u-form-date u-form-group u-label-top u-form-group-67"
-                >
-                  <label
-                    for="date-0ed0"
-                    class="u-form-control-hidden u-label"
-                  ></label>
-                  <input
-                    type="text"
-                    readonly="readonly"
-                    placeholder="YYYY/MM/DD"
-                    id="date-0ed0"
-                    name="date-6"
-                    class="u-border-none u-input u-input-rectangle u-palette-5-base u-radius-37 u-input-51"
-                    required=""
-                    data-date-format="yyyy/mm/dd"
-                  />
-                </div>
-                <div class="u-form-group u-label-top u-form-group-68">
-                  <label
-                    for="text-00f8"
-                    class="u-form-control-hidden u-label"
-                  ></label>
-                  <input
-                    type="text"
-                    placeholder="Guardian passport number"
-                    id="text-00f8"
-                    name="text-39"
-                    class="u-border-none u-input u-input-rectangle u-palette-5-base u-radius-37 u-input-52"
-                  />
-                </div>
-                <div class="u-form-group u-label-top u-form-group-69">
-                  <label
-                    for="text-8d78"
-                    class="u-form-control-hidden u-label"
-                  ></label>
-                  <input
-                    type="text"
-                    placeholder="Issue place"
-                    id="text-8d78"
-                    name="text-40"
-                    class="u-border-none u-input u-input-rectangle u-palette-5-base u-radius-37 u-input-53"
-                  />
-                </div>
-                <div
-                  class="u-form-date u-form-group u-form-partition-factor-2 u-label-top u-form-group-70"
-                >
-                  <label
-                    for="date-59e3"
-                    class="u-form-control-hidden u-label"
-                  ></label>
-                  <input
-                    type="text"
-                    readonly="readonly"
-                    placeholder="YYYY/MM/DD"
-                    id="date-59e3"
-                    name="date-4"
-                    class="u-border-none u-input u-input-rectangle u-palette-5-base u-radius-37 u-input-54"
-                    required=""
-                    data-date-format="yyyy/mm/dd"
-                  />
-                </div>
-                <div
-                  class="u-form-date u-form-group u-form-partition-factor-2 u-label-top u-form-group-71"
-                >
-                  <label
-                    for="date-66bb"
-                    class="u-form-control-hidden u-label"
-                  ></label>
-                  <input
-                    type="text"
-                    readonly="readonly"
-                    placeholder="YYYY/MM/DD"
-                    id="date-66bb"
-                    name="date-5"
-                    class="u-border-none u-input u-input-rectangle u-palette-5-base u-radius-37 u-input-55"
-                    required=""
-                    data-date-format="yyyy/mm/dd"
-                  />
-                </div>
+
                 <div
                   class="u-align-left u-form-group u-form-submit u-label-top"
                 >
-                  <input
-                    type="submit"
-                    value="submit"
-                    class="u-form-control-hidden"
-                  />
-                  <a href="#" class="u-btn u-btn-submit u-button-style u-btn-1"
-                    >Submit</a
-                  >
-                </div>
-                <div class="u-form-send-message u-form-send-success">
-                  Thank you! Your message has been sent.
-                </div>
-                <div class="u-form-send-error u-form-send-message">
-                  Unable to send your message. Please fix errors then try again.
-                </div>
-                <input type="hidden" value="" name="recaptchaResponse" />
-                <input
-                  type="hidden"
-                  name="formServices"
-                  value="b3f61a8f-f7f4-1f49-0486-0bf2e3f294c7"
-                />
+                  <button id="submit">Submit</button>
               </form>
             </div>
             <p class="u-text u-text-default u-text-9">Date of birth</p>
@@ -1263,5 +768,6 @@
         <span>Website Builder Software</span> </a
       >.
     </section>
+    <script src="individualBoaccountForm.js"></script>
   </body>
 </html>

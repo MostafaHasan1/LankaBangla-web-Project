@@ -1,4 +1,4 @@
-const usersApi = "http://localhost:3300/users";
+const usersApi = "http://localhost:3300/users/individual";
 
 let userData = [];
 let counter = 1;
@@ -12,7 +12,7 @@ document.addEventListener("DOMContentLoaded", event => {
     })
         .then(reponse => reponse.json())
         .then(data => {
-            userData = [...data];
+            userData = [...data.filter(d=> d.bo_id=== null)];
             updateDataTable();
         })
         .catch(error => { console.log(error); })
@@ -20,7 +20,7 @@ document.addEventListener("DOMContentLoaded", event => {
 
 document.getElementById("boidreq").addEventListener("click", event => {
     userData = [
-        ...userData.map(data => ({ ...data, BOID: data.BOID === null ? newBOID(data.nid) : data.BOID }))
+        ...userData.map(data => ({ ...data, bo_id: data.bo_id === null ? newBOID(data.c_code) : data.bo_id }))
     ]
 
     console.log(userData);
@@ -36,12 +36,12 @@ const updateDataTable = () => {
     });
 }
 
-const newRow = ({ name, email, nid, BOID }) => {
+const newRow = ({ c_name, c_code, c_sex, bo_id }) => {
     const row = document.createElement("tr");
-    row.appendChild(newCol(name));
-    row.appendChild(newCol(email));
-    row.appendChild(newCol(nid));
-    row.appendChild(newCol(BOID));
+    row.appendChild(newCol(c_name));
+    row.appendChild(newCol(c_code));
+    row.appendChild(newCol(c_sex));
+    row.appendChild(newCol(bo_id));
     return row;
 }
 
@@ -51,14 +51,14 @@ const newCol = (text) => {
     return col;
 }
 
-const newBOID = (nid) => {
+const newBOID = (c_code) => {
     const uniqueBOID = generateUniqueNumber();
-    fetch(`${usersApi}/${nid}`, {
+    fetch(`${usersApi}/${c_code}`, {
         method: "PUT",
         headers: {
             "Content-type": "application/json"
         },
-        body: JSON.stringify({ BOID: uniqueBOID })
+        body: JSON.stringify({ bo_id: uniqueBOID })
     })
         .then(reponse => reponse.json())
         .then(message => { console.log(message); })

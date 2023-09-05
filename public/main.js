@@ -26,8 +26,8 @@ document.getElementById("submit").addEventListener("click",(event) => {
   const usermail = document.getElementById("createEmail");
   const userNID = document.getElementById("createID");
   console.log(userNID.value, userName.value, usermail.value);
-  fetch("http://localhost:3300/users", {
-    method: "POST",
+  fetch("http://localhost:3300/users/individual", {
+    method: "PUT",
     headers: {
       "Content-type": "application/json",
     },

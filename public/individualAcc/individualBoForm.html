@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Individual bo form</title>
+    <link rel="stylesheet" href="individualBoForm.css" />
+  </head>
+  <body>
+    <div id="header"><h1>Individual BO Form</h1>    </div>
+    
+    <form class="forms" id="individual_form">
+      <div class="">
+        <label for="poaname">Name</label>
+        <input
+          type="text"
+          class="form-control"
+          id="poaname"
+          name="c_name"
+          placeholder="Enter your name"
+          required
+          autofocus
+        />
+      </div>
+
+      <div class="">
+        <label for="poaname">Father name</label>
+        <input
+          type="text"
+          class="form-control"
+          id="poaname"
+          name="c_father_name"
+          placeholder="Enter your father name"
+          required
+          autofocus
+        />
+      </div>
+
+      <div class="">
+        <label for="poaname">Mother name</label>
+        <input
+          type="text"
+          class="form-control"
+          id="poaname"
+          name="c_mother_name"
+          placeholder="Enter your mother name"
+          required
+          autofocus
+        />
+      </div>
+
+      <div>
+        <label for="accountType">Account type</label>
+        <input type="radio" id="margin" name="c_account_type" value="Margin">
+        <label for="margin"> Margin</label>
+        <input type="radio" id="direct_trading" name="c_account_type" value="Direct Trading">
+        <label for="direct_trading"> Direct Trading</label><br><br>
+      </div>
+
+      <div class="">
+        <label for="poaname">Date of birth</label>
+        <input
+          type="date"
+          class="form-control"
+          id="poaname"
+          name="c_dob"
+          placeholder=""
+          required
+          autofocus
+        />
+      </div>
+
+      <div>
+        <label for="">Gender</label>
+        <input type="radio" id="male" name="c_sex" value="Male" /><label for="Male" id="l_male">Male</label>
+        <input type="radio" id="female" name="c_sex" value="Female" /><label for="Female" id="l_female">Female</label>
+      </div><br>
+
+      <details>
+        <summary>
+            <div>Customers Permanent Address</div>
+        </summary>
+        <fieldset>
+            <div>   
+                <label id="poaadd" for="poa_address">Present Address</label>
+                <textarea class="form-control"  name="c_pre_add" rows="5" cols="30" placeholder="e.g. house #6, road #1, dhanmondi r/a, 1205"></textarea>
+              </div>
+        
+              <div class="">
+                <label for="poaname">Present City</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="poaname"
+                  name="c_pre_city"
+                  placeholder="Enter your city"
+                  required
+                  autofocus
+                />
+              </div>
+        
+              <div class="">
+                <label for="poaname">Present Postal code</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="poaname"
+                  name="c_pre_post_code"
+                  placeholder="Postal code"
+                  required
+                  autofocus
+                />
+              </div>
+        
+              <div class="">
+                <label for="poaname">Present Country</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="poaname"
+                  name="c_pre_country"
+                  placeholder="Country"
+                  required
+                  autofocus
+                />
+              </div>
+        
+              <div class="">
+                <label for="poaname">Present telephone number</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="poaname"
+                  name="c_pre_tel"
+                  placeholder="e.g. 01054 694200"
+                  required
+                  autofocus
+                />
+              </div>
+          </fieldset><br>
+    
+      </details>
+
+      <details>
+        <summary>
+            <div class="cdet"><div>Customers Present Address:</div></div>
+        </summary>
+        <fieldset>
+            
+            <div>   
+                <label id="poaadd" for="poa_address">Permanent Address</label>
+                <textarea class="form-control"  name="c_per_add," rows="5" cols="30" placeholder="e.g. house #6, road #1, dhanmondi r/a, 1205"></textarea>
+              </div>
+        
+              <div class="">
+                <label for="poaname">Permanent City</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="poaname"
+                  name="c_per_city"
+                  placeholder="Enter your city"
+                  required
+                  autofocus
+                />
+              </div>
+        
+              <div class="">
+                <label for="poaname">Permanent Postal code</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="poaname"
+                  name="c_per_post_code"
+                  placeholder="Postal code"
+                  required
+                  autofocus
+                />
+              </div>
+        
+              <div class="">
+                <label for="poaname">Permanent Country</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="poaname"
+                  name="c_per_country"
+                  placeholder="Country"
+                  required
+                  autofocus
+                />
+              </div>
+        
+              <div class="">
+                <label for="poaname">Permanent telephone number</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="poaname"
+                  name="c_per_tel"
+                  placeholder="e.g. 01054 694200"
+                  required
+                  autofocus
+                />
+              </div>
+          </fieldset><br>
+      </details>
+      
+
+      <div>
+        <label for="">Client type</label>
+        <input type="radio" id="regular" name="c_type" value="Male" /><label for="regular" id="regular">Regular</label>
+        <input type="radio" id="clearing" name="c_type" value="Female" /><label for="clearing" id="clearing">Clearing</label>
+      </div><br>
+
+      <div>
+        <label for="poatitle">Division</label>
+        <select class="form-control" id="poatitle" name="c_division">
+          <option value="Dhaka">Dhaka</option>
+          <option value="Chittagong">Chittagong</option>
+          <option value="Barisal">Barisal</option>
+          <option value="Khulna">Khulna</option>
+          <option value="Mymensingh">Mymensingh</option>
+          <option value="Rajshahi">Rajshahi</option>
+          <option value="Rangpur">Rangpur</option>
+          <option value="Sylhet">Sylhet</option>
+        </select>
+      </div>
+
+      
+      
+      
+      
+      <div class="">
+        <label for="poaname">Mobile number</label>
+        <input
+          type="text"
+          class="form-control"
+          id="poaname"
+          name="c_mobile_num"
+          placeholder="e.g. +880 1XXX NNNNNN"
+          required
+          autofocus
+        />
+      </div>
+
+      <div class="">
+        <label for="poaname">Email</label>
+        <input
+          type="text"
+          class="form-control"
+          id="poaname"
+          name="c_email"
+          placeholder="e.g. abc@gmail.com"
+          required
+          autofocus
+        />
+      </div>
+
+      <div class="">
+        <label for="poaname">Occupation</label>
+        <input
+          type="text"
+          class="form-control"
+          id="poaname"
+          name="c_occupation"
+          placeholder=""
+          required
+          autofocus
+        />
+      </div>
+
+      <div class="">
+        <label for="poaname">Passport number</label>
+        <input
+          type="text"
+          class="form-control"
+          name="c_passport_num,"
+          placeholder=""
+          required
+          autofocus
+        />
+      </div>
+
+
+      <div class="">
+        <label for="poaname">E-tin</label>
+        <input
+          type="text"
+          class="form-control"
+          id="poaname"
+          name="c_etin"
+          placeholder=""
+          required
+          autofocus
+        />
+      </div>
+
+      <div class="">
+        <label for="poaname">Nationality</label>
+        <input
+          type="text"
+          class="form-control"
+          id="poaname"
+          name="c_nationality"
+          placeholder=""
+          required
+          autofocus
+        />
+      </div>
+
+      <div>
+        <label for="poatitle">Account Opening Branch</label>
+        <select class="form-control" id="poatitle" name="c_branch">
+          <option value="Agrabad(ctg)">Agrabad</option>
+          <option value="Bangshal">Bangshal</option>
+          <option value="Barisal">Barisal</option>
+          <option value="Bashundhara">Bashundhara</option>
+          <option value="Cumilla">Cumilla</option>
+          <option value="Dhanmondi">Dhanmondi</option>
+          <option value="Elephant Road">Elephant Road</option>
+          <option value="Feni">Feni</option>
+        </select>
+      </div><br>
+
+      <details>
+        <summary><div id="bd">Bank details:</div> </summary><br>
+        <div class="">
+            <label for="poaname">Bank routing number</label>
+            <input
+              type="text"
+              class="form-control"
+              id="poaname"
+              name="c_bank_routing_num"
+              placeholder=""
+              required
+              autofocus
+            />
+          </div>
+    
+          <div class="">
+            <label for="poaname">Bank account number</label>
+            <input
+              type="text"
+              class="form-control"
+              id="poaname"
+              name="c_bank_account_num"
+              placeholder=""
+              required
+              autofocus
+            />
+          </div>
+    
+          <div>
+            <label for="poatitle">Bank Branch Name</label>
+            <input type="text" class="form-control" name="c_bank_branch_name" placeholder=""
+            required>
+          </div>
+      </details>
+      
+      <details>
+        <summary><div>Value Added Services:</div></summary>
+            <input type="checkbox" name="internet_trading" value="Y">
+            <label for="internet_trading"> Internet trading</label><br>
+            
+            <input type="checkbox" name="dse" value="Y">
+            <label for="dse"> DSE</label><br>
+            
+            <input type="checkbox" name="cse" value="Y">
+            <label for="cse"> CSE</label><br>
+            
+            <input type="checkbox" name="oms" value="Y">
+            <label for="oms" style="width: 250px;"> Order Management System</label><br>
+            
+            <input type="checkbox" name="sms_service," value="Y">
+            <label for="sms_service"> SMS service</label><br>
+            
+            <input type="checkbox" name="email_service" value="Y">
+            <label for="email_service"> Email service</label><br>
+        </details>
+
+      <button id="submit">Submit</button>
+    </form>
+
+    
+    <script src="individualBoForm.js"></script>
+  </body>
+</html>

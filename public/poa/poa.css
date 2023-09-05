@@ -1,0 +1,72 @@
+body {
+  color: #000;
+  font-weight: 700;
+  font-size: 20px;
+  background-color: #2a9d8f;
+  margin: 0;
+}
+
+#header {
+  margin: 0;
+  padding: 60px;
+  background-color: #14213d;
+  text-align: center;
+  font-size: 25px;
+  color: #fca311;
+  background-image: url(../img/logo.png);
+  background-repeat: no-repeat;
+  background-size: 200px;
+  background-attachment: local;
+  background-position-x: 30px;
+  background-position-y: 30px;
+}
+
+form {
+  margin-left: 400px;
+  padding: 3rem;
+}
+
+label {
+  display: inline-block;
+  width: 150px;
+  text-align: left;
+}
+
+div {
+  margin-bottom: 10px;
+}
+
+.form-control {
+  width: 300px;
+  padding: 20px;
+  border: 1px solid #ccc;
+  background-color: #e9c46a;
+  font-size: 20px;
+  border-radius: 1rem;
+}
+
+#poatitle {
+  width: 341px;
+}
+
+input[type="radio"] {
+  transform: scale(2);
+}
+
+#l_male,
+#l_female {
+  margin-left: 10px;
+}
+
+#submit {
+  margin-top: 2rem;
+  padding: 10px 30px;
+  font-size: 25px;
+  border-radius: 1rem;
+  background-color: #f4a261;
+}
+
+#submit:hover {
+  background-color: #264653;
+  color: #fb8500;
+}
